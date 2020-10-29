@@ -3,41 +3,45 @@
 > OBS: ainda esta em desenvolvimento
 
 ## Instalação
+
 Abra o terminal e navegue ate o diretório do projeto, digite node install
 
-´´´
+```
 node install
 
-´´´
+```
 
 ## Como utilizar?
-Dentro do app.js existe 3 funções 
 
+Dentro do app.js existe 3 funções
 
 ### Primeiros passos
+
 1. Adicione o arquivo csv ou json que queira converter
-2. Utilize as funções abaixo para manipulalos 
+2. Utilize as funções abaixo para manipulalos
 
+### convertToJson(nameFileCsv, fileOutJson)
 
-### convertToJson(nameFileCsv, fileOutJson) 
-
-Exemplo: 
 O primeiro parametro recebe o nome do aquivo que se quer converter
 O segundo paramentro recebe o nome da saida do arquivo
-´´´
-convertToJson("./base.CSV", "base.json");
-´´´´
 
+Exemplo:
+
+```
+convertToJson("./base.CSV", "base.json");
+
+```
 
 ### convertFileToDefault (fileInput, fileOutput)
+
 O primeiro parametro recebe o nome do aquivo que se quer "padronizar"
 O segundo paramentro recebe o nome da saida do arquivo
 
 Exemplo:
-´´´
-defaultFile("./base.json", "default.json");
-´´´
 
+```
+defaultFile("./base.json", "default.json");
+```
 
 ### convertToCsv(fileinput, collunmTable, fileOutput)
 
@@ -46,8 +50,7 @@ O segundo paramentro recebe uma lista com os nomes das colunas
 O segundo paramentro recebe o nome da saida do arquivo
 
 Exemplo:
-´´´
+
+```
 convertToCsv("./default.json", ["name","email","cpf","ra","unidade","curso","disciplina"], "dataBaseFullFormated.csv");
-
-´´´
-
+```
